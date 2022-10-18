@@ -1,27 +1,13 @@
-const amount = 12
+// Modules
 
-// var name = "Snasj"
+const sname = 'shashank'
+const pname = 'priti'
 
-if(amount < 10){
-    console.log('small number')
+
+const sayHi=(name) =>{
+    console.log(`Hello there ${name}`);
 }
-else{
-    console.log('large number')
-}
 
-// Global variables
-
-// __dirname = path to the current directory
-// __filename = file name
-// require = function to use modules(CommonJS)
-// module = info about current module (files)
-// process = info about env where the program is being executed
-
-
-console.log(__dirname,__filename)
-
-console.log(`Hello world shashank!!`)
-
-setInterval(() => {
-    console.log('Lenovo');
-},1000)
+sayHi('Prince')
+sayHi(sname.toUpperCase())
+sayHi(pname.toUpperCase())
