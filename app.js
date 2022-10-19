@@ -1,13 +1,14 @@
-// Modules
+// CommonJS, every file is module (by default)
+// Modules - Encapsulated code (only share minimum)
 
-const sname = 'shashank'
-const pname = 'priti'
+const sayHi = require("./first_module")
+const name = require("./name")
+const tp = require("./alertnative_module")
 
+require('./addfunction')
 
-const sayHi=(name) =>{
-    console.log(`Hello there ${name}`);
-}
+// sayHi('Prince')
+// sayHi(name.sname.toUpperCase())
+// sayHi(name.pname.toUpperCase())
 
-sayHi('Prince')
-sayHi(sname.toUpperCase())
-sayHi(pname.toUpperCase())
+// console.log(tp)
