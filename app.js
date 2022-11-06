@@ -1,10 +1,14 @@
-const amount = 12
+// CommonJS, every file is module (by default)
+// Modules - Encapsulated code (only share minimum)
 
-if(amount < 10){
-    console.log('small number')
-}
-else{
-    console.log('large number')
-}
+const sayHi = require("./first_module")
+const name = require("./name")
+const tp = require("./alertnative_module")
 
-console.log(`Hello world shashank!!`)
+require('./addfunction')
+
+// sayHi('Prince')
+// sayHi(name.sname.toUpperCase())
+// sayHi(name.pname.toUpperCase())
+
+// console.log(tp)
